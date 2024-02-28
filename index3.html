@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <title>Descodificador</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+    <header>
+        <a href="index3.html"><img src="./IMG/logo.png" alt="logo" width="120" height="48"></a>
+    </header>
+    <main class="apresentacao">
+      <section class="apresentacao__campo">
+        <div class="apresentacao__campo__texto">
+          <textarea class="autoTxtArea" name="texto" id="texto" placeholder="Digite seu texto" ></textarea>
+        </div>
+        <div class="apresentacao__campo__alerta">
+          <img src="./IMG/alerta.png" alt="exclamação" width="16" eight="16">
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="apresentacao__botoes">
+          <button class="botao" onclick="substituirPorTextarea(); criptografar()">Criptografar</button>
+          <button class="botao" onclick="substituirPorTextarea(); descriptografar()">Descriptografar</button>
+        </div>
+      </section>
+       <section class="apresentacao_campo__textoCodificado">
+        <div>
+          <picture >
+            <source media="(max-width: 480px)" srcset="./IMG/p.png" type="image/png" widht="375px" alt="Imagem grande">
+            <source media="(max-width: 885px)" srcset="./IMG/m.png" type="image/png" alt="Imagem média">
+            <img id="imagem" src="./IMG/g.png" alt="Imagem Grande">
+          </picture>
+        </div>
+          <div class="botao__copiar__textoCodificado">
+            <button class="botao__copiar" onclick="copiarTexto()">copiar</button>
+          </div>
+       </section>
+    </main>
+    <footer>
+        <p> &#169 Desenvolvido por Daniele Lima para o Challenge ONE.</p>
+    </footer>
+    <script src="./JS/codigo.js"></script>
+</body>
+</html>
