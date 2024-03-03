@@ -7,22 +7,19 @@ function substituirPorTextarea() {
     var imagem = document.getElementById('imagem');
     var botaoCopiar = document.querySelector('.botao__copiar');
 
-    if (imagem) {
+    if (imagem){
       var textarea = document.createElement('textarea');
       textarea.id = "resultado";
       textarea.className = 'area__texto__codificado';
 
       imagem.parentNode.replaceChild(textarea, imagem);
      
-      if (botaoCopiar) {
-        botaoCopiar.style.display = 'block';
-    }
+      botaoCopiar.style.display = 'block';
+    
     } else {
       console.log('A imagem não está presente na tela.');
 
-      if (botaoCopiar) {
-        botaoCopiar.style.display = 'none';
-    }
+    
     }
 }
 
