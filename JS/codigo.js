@@ -19,7 +19,6 @@ function substituirPorTextarea() {
     } else {
       console.log('A imagem não está presente na tela.');
 
-    
     }
 }
 
