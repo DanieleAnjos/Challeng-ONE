@@ -16,5 +16,5 @@ Olá, estou concluindo o meu primeiro desafio do Challenge ONE da Alura. O objet
 
 ### Daniele Lima
 
-### Linkedin: https://www.linkedin.com/in/daniele-lima-dos-anjos/
+### Linkedin: https://www.linkedin.com/in/daniele-anjos/
 
